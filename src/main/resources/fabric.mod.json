@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "modern-armor-bar",
+	"version": "${version}",
+	"name": "Modern Armor Bar",
+	"description": "§b§lModern Armor Bar§r adds a sleek visual representation of your equipped gear directly to your HUD.\n\n§7Keep track of your protection at a glance! This mod displays your §lcurrent armor items§r next to your health or hotbar, ensuring you always know your durability and status without opening your inventory.",
+	"authors": [
+		"Mads"
+	],
+	"contact": {
+		"sources": "https://github.com/madsbest/modern-armor-bar"
+	},
+	"license": "MIT",
+	"icon": "assets/armorbar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mads.armorbar.ModernArmorBar"
+		],
+		"client": [
+			"com.mads.armorbar.client.ModernArmorBarClient"
+		]
+	},
+	"mixins": [
+		"modern-armor-bar.mixins.json",
+		"modern-armor-bar.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
